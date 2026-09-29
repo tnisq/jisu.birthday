@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Most Special Day</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <!-- Start Screen to Unlock Autoplay -->
+  <div id="start-overlay" class="start-overlay">
+    <button id="start-btn" class="start-btn">Tap to open your surprise 💌</button>
+  </div>
+
+  <!-- Background -->
+  <div class="ambient-light ambient-one" aria-hidden="true"></div>
+  <div class="ambient-light ambient-two" aria-hidden="true"></div>
+  <div id="floating-container" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="#welcome">Home</a>
+      <a href="#music">Music</a>
+      <a href="#message">My Letter</a>
+      <a href="#reason">The Reason</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#video">Video</a>
+    </nav>
+  </header>
+
+  <!-- Controls -->
+  <div class="floating-controls">
+    <button id="flower-toggle" type="button" aria-pressed="true" aria-label="Pause flower animation">
+      ❀ Pause flowers
+    </button>
+
+    <button id="music-toggle" type="button" aria-controls="birthday-music" aria-pressed="false">
+      ♫ Play music
+    </button>
+  </div>
+
+  <main>
+    <!-- Welcome -->
+    <section id="welcome" class="standard-section">
+      <div class="glass-card lily-card tilt-element welcome-card">
+        <span class="corner-lily" aria-hidden="true"></span>
+
+        <span class="eyebrow">Wishing you a day as bright as your smile!</span>
+
+        <h1>Most Special Day</h1>
+
+        <p class="no-margin">
+          Today is all about celebrating you, your laugh, your soul,
+          and every little thing that makes you so extraordinary.
+        </p>
+
+        <a class="discover-link" href="#music">
+          Your surprises await ❤︎⁠ <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Music -->
+    <section id="music" class="standard-section">
+      <span class="eyebrow">Every beautiful moment needs a melody</span>
+      <h2>A Soundtrack For You</h2>
+      <p>Play this while you scroll through your birthday surprises.</p>
+
+      <div class="glass-card music-card tilt-element">
+        <div class="music-symbol" aria-hidden="true">♫</div>
+
+        <h3>Oh My Angel</h3>
+        <p class="artist">˚ʚ♡ɞ˚ you are my angel ˚ʚ♡ɞ˚</p>
+
+        <div class="audio-container">
+          <audio id="birthday-music" controls loop preload="metadata">
+            <source src="assets/oh my angle.mp3" type="audio/mpeg">
+            Your browser does not support audio playback.
+          </audio>
+
+          <p id="music-status" class="music-status" role="status">
+            Ready to play.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Letter -->
+    <section id="message" class="standard-section">
+      <span class="eyebrow">From my heart to yours</span>
+      <h2>To The Girl I Admire</h2>
+
+      <p class="lily-section-intro">
+       ୨ৎ Everything I love about you, wrapped in a single letter ୨ৎ
+      </p>
+
+      <div class="glass-card lily-card tilt-element">
+        <span class="corner-lily" aria-hidden="true"></span>
+
+        <div class="message-text">
+          You are the definition of
+          <span class="highlight">radiance</span>,
+          but somehow even that word feels too small for you.
+          There is something about you that makes everything around you feel softer,
+          warmer, and a little more beautiful.
+
+          Your
+          <span class="highlight">beauty</span>
+          isn’t only in the way you look, although you are genuinely breathtaking —
+          your eyes, your smile, your little expressions, the way your face lights up
+          when you’re happy — I could notice a thousand beautiful things about you
+          and still feel like I haven’t seen enough.
+
+          But what makes me love you so deeply is the
+          <span class="highlight">heart</span>
+          behind that beauty. You care so genuinely, you feel everything so deeply,
+          and you have this incredibly thoughtful way of making the people you love
+          feel important and safe.
+
+          I’m constantly amazed by your
+          <span class="highlight">grace</span>,
+          your softness, your strength, and even the little things you probably
+          don’t realize I notice.
+
+          And then there’s your
+          <span class="highlight">smile</span>
+          — my favorite kind of magic, the kind that can change the entire feeling
+          of a moment without even trying.
+
+          I don’t just love how beautiful you are; I love the person you are,
+          the soul you carry, the little things that make you
+          <span class="highlight">you</span>,
+          and all the feelings I can’t always put into words.
+
+          My love for you isn’t because of one perfect thing about you —
+          it’s because every little part of you somehow became
+          <span class="highlight">precious</span>
+          to me.
+
+          You have this rare kind of
+          <span class="highlight">light</span>
+          that I could never get tired of admiring, and the more I know you,
+          the more reasons I find to love you.
+
+          Today may be about celebrating you, but honestly, I feel lucky every day
+          that someone as beautiful, genuine, and extraordinary as you exists in my life.
+
+          You are not just someone I love; you are someone I could look at endlessly
+          and still think,
+          <span class="highlight">“how did I get this lucky?”</span>
+        </div>
+
+
+        <span class="letter-signature">With all my love ♡</span>
+      </div>
+    </section>
+
+    <!-- Reason -->
+    <section id="reason" class="standard-section">
+      <span class="eyebrow">Of all the reasons in the world</span>
+      <h2>The Reason Why</h2>
+
+      <p class="lily-section-intro">
+        If I had to narrow everything down to just one thought...
+      </p>
+
+      <div class="glass-card lily-card tilt-element reason-card">
+        <span class="corner-lily" aria-hidden="true"></span>
+
+        <p class="reason-text">
+          “I love you simply because you are you—the most beautiful,
+          irreplaceable part of my every day, and the part of my life I
+          could never imagine being without.”
+        </p>
+
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" aria-labelledby="gallery-title">
+      <div class="gallery-sticky">
+        <div class="gallery-header">
+          <span class="eyebrow">Little moments, forever treasured</span>
+          <h2 id="gallery-title">Our Memories</h2>
+          <p>Keep scrolling slowly.</p>
+        </div>
+
+        <div class="rope-container">
+          <div class="rope-line" aria-hidden="true"></div>
+
+          <div class="scroll-photo lily-card" tabindex="0">
+            <span class="corner-lily" aria-hidden="true"></span>
+            <div class="photo-placeholder">
+              <span><img src="assets/img1.jpeg" alt=""></span>
+            </div>
+            <div class="photo-caption">Special</div>
+          </div>
+
+          <div class="scroll-photo lily-card" tabindex="0">
+            <span class="corner-lily" aria-hidden="true"></span>
+            <div class="photo-placeholder">
+              <span><img src="assets/img3.jpeg" alt=""></span>
+            </div>
+            <div class="photo-caption">Sweetheart</div>
+          </div>
+
+          <div class="scroll-photo lily-card" tabindex="0">
+            <span class="corner-lily" aria-hidden="true"></span>
+            <div class="photo-placeholder">
+              <span><img src="assets/img4.jpeg" alt=""></span>
+            </div>
+            <div class="photo-caption">Pure Joy</div>
+          </div>
+
+          <div class="scroll-photo lily-card" tabindex="0">
+            <span class="corner-lily" aria-hidden="true"></span>
+            <div class="photo-placeholder">
+              <span><img src="assets/img5.jpeg" alt=""></span>
+            </div>
+            <div class="photo-caption">Perfect</div>
+          </div>
+
+          <div class="scroll-photo lily-card" tabindex="0">
+            <span class="corner-lily" aria-hidden="true"></span>
+            <div class="photo-placeholder">
+              <span><img src="assets/img2.jpeg" alt=""></span>
+            </div>
+            <div class="photo-caption">Forever</div>
+          </div>
+
+          <div class="scroll-photo lily-card" tabindex="0">
+            <span class="corner-lily" aria-hidden="true"></span>
+            <div class="photo-placeholder">
+              <span><img src="assets/img7.jpeg" alt=""></span>
+            </div>
+            <div class="photo-caption">Gorgeous</div>
+          </div>
+
+          <div class="scroll-photo lily-card" tabindex="0">
+            <span class="corner-lily" aria-hidden="true"></span>
+            <div class="photo-placeholder">
+              <span><img src="assets/img6.jpg" alt=""></span>
+            </div>
+            <div class="photo-caption">Cutie</div>
+          </div>
+
+          <div class="scroll-photo lily-card" tabindex="0">
+            <span class="corner-lily" aria-hidden="true"></span>
+            <div class="photo-placeholder">
+              <span><img src="assets/img9.jpeg" alt=""></span>
+            </div>
+            <div class="photo-caption">Softie</div>
+          </div>
+
+          <div class="scroll-photo lily-card" tabindex="0">
+            <span class="corner-lily" aria-hidden="true"></span>
+            <div class="photo-placeholder">
+              <span><img src="assets/img10.jpeg" alt=""></span>
+            </div>
+            <div class="photo-caption">Love</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section id="video" class="standard-section">
+      <span class="eyebrow">Something for you</span>
+      <h2>A Moment For You</h2>
+      <p>A short video message for your birthday.</p>
+
+      <div class="glass-card tilt-element">
+        <div class="cinematic-video">
+          <video src="assets/vid1.mp4" controls playsinline preload="metadata">
+          </video>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    Made with love, for my jisu.<br>
+    <h5>your tishu forever yours</h5>
+    <span aria-hidden="true">♡</span>
+  </footer>
+</body>
+
+</html>
